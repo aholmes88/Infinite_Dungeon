@@ -17,6 +17,9 @@ RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
+background = pygame.image.load('Cave - 1.jpg')
+ 
+
 # Fonts
 FONT = pygame.font.Font(None, 36)
 
@@ -91,7 +94,9 @@ def main():
 
     running = True
     while running:
-        screen.fill(WHITE)
+        screen.blit(background, (0,0))
+
+
 
         # Default message to ensure it's always initialized
         message = "Your turn! Press SPACE to attack, C to cast a spell, or R to rest."
